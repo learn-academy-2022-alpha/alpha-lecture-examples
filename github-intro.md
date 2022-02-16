@@ -25,7 +25,7 @@ Markdown is a text-based language, file extension of `.md`
 ### Branching
 - What is a branch? connection between local and remote
 - $ `git branch` - informational command, list all the branches on your local
-- Create a new branch (checkout a new branch) - $ `git checkout -b descriptive-branch-name`
+- Create a new branch (checkout a new branch) - $ `git checkout -b <descriptive-branch-name>`
 - Move between existing branches - $ `git checkout <descriptive-branch-name>`
 
 ### Merging Branches on GitHub
@@ -36,8 +36,8 @@ Markdown is a text-based language, file extension of `.md`
 - Merge Pull Request - takes the diff from the branch and adds it to the main (source of truth)
 - Deleted the branch on GitHub
 
-### Reconciling on our Local
+### Reconciling on Our Local
 - Check what branch we are on
 - Go back to the main branch - $ `git checkout main`
-- $ `git pull origin <descriptive-branch-name>`
+- $ `git pull origin main`
 - Delete branch locally - $ `git branch -d <descriptive-branch-name>`
