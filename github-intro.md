@@ -41,3 +41,10 @@ Markdown is a text-based language, file extension of `.md`
 - Go back to the main branch - $ `git checkout main`
 - $ `git pull origin main`
 - Delete branch locally - $ `git branch -d <descriptive-branch-name>`
+
+### Fetching
+- A branch can be shared between two developers so that many teams can contribute to the same repository
+- A branch that exists on GitHub that doesn't exist locally can be brought in with fetch
+- $ `git fetch origin <branch-name>`
+- $ `git checkout <branch-name>`
+- Once both people have branches you can push and pull from the branch
