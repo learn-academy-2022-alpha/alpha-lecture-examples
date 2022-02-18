@@ -31,30 +31,36 @@ const alpha = () => {
   return "Hello Alpha"
 }
 
-// Function Invocation
+//Function Invocation / Function Call
+  //                 v
+  //   console.log(alpha())
 
-//   console.log(alpha());
 
+// Invoking the Function a number of times w/o repeating ourselves
 // for(let i = 0; i < 8; i++) {
-//   console.log(alpha());
+//   console.log(alpha())
 // }
 
 // const psuedoFunction = (parameter) => {
 //   < executable code goes here>
 //   return <final result>
 // }
-
+//                       parameter
+//                           v
 // const donutMachine = (doughType) => {
 //   return `A ${doughType} donut is made`
 // }
 
+
+//                         argument
+//                            v
 // console.log(donutMachine("plain"))
 // console.log(donutMachine("ube"))
 // console.log(donutMachine("Apple Fritter"))
 // console.log(donutMachine("Voodoo"))
 
 // Pseudo Code
-// donut maker pseudo code 
+// Donut Maker Function pseudo code 
 // Input of donutMachine should be: what kind of donuts, and how many donuts.
 // Output of donutMachine: a string that says "you ordered x number of y kind of donuts". 
 // Edge Cases: if you order a dozen its discounted by a couple of $. cannot order negative donuts
@@ -71,11 +77,9 @@ const alpha = () => {
 const donutMachine = (donutType, donutNumber) => {
   if(donutNumber === 12){
     return `You ordered a dozen donuts of ${donutType}. That'll be $10`
-  }
-  else if(donutNumber <= 0){
+  } else if(donutNumber <= 0){
     return "Hey we don't sell negative donuts here"
-  }
-  else {
+  } else {
     return `You ordered ${donutNumber} of ${donutType}. That'll cost you $${donutNumber}.`
   }
 }
