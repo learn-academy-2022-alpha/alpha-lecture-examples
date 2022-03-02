@@ -18,3 +18,12 @@ User Interactions
 - Only the tags that have a change get updated
 - Virtual DOM - listen for changes and isolate where the changes happen, looking for a diff, reconciling the diff
 - Nodes - in reference to the DOM all the HTML tags/element are called nodes
+
+
+Vocab
+- JSX - HTML like markdown that can have embedded JavaScript
+- Component call/component invocation is instantiating the component
+
+Error message: Uncaught SyntaxError: /Inline Babel script: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>?
+
+- JSX fragment <></> that will wrap the content of a component without creating another node

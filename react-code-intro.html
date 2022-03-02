@@ -13,15 +13,40 @@
     <div id="react-container"></div>
 
     <script type="text/babel">
-      class HelloReact extends React.Component{
-        render(){
+
+      class HelloReact extends React.Component {
+        render() {
           return(
-            <h1>Hello React!</h1>
+            <>
+              <h1>Hello React!</h1>
+              <Header />
+              <Footer />
+            </>
           )
         }
       }
+
+      class Header extends React.Component {
+        render() {
+          return(
+            <h2>Hi Alpha Class</h2>
+          )
+        }
+      }
+
+      class Footer extends React.Component {
+        render() {
+          return (
+            <>
+              <p>Crafted by the Alpha cohort</p>
+            </>
+          )
+        }
+      }
+
       const domContainer = document.querySelector('#react-container');
       ReactDOM.render(<HelloReact />, domContainer);
+
     </script>
   </body>
 </html>
