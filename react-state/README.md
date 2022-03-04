@@ -55,9 +55,24 @@ export default App
 
 ## Adding more components
 - Make a folder titled `components` in the src folder
-- Add files with the following naming convention `Name.js` within the components folder
+- Add files with the following naming convention `ClassComponentName.js` within the components folder
 - Ensure App.js has imports for other components
+```javascript
+import React, { Component } from 'react'
+
+// import the other components with its file path
+import ClassComponentName from './components/ClassComponentName'
+```
 - Ensure component calls are included on the App.js
+```javascript
+  render() {
+    return (
+      <>
+        <ClassComponentName />
+      </>
+    )
+  }
+```
 
 ## Basic Structure of Logic Component Class
 ```javascript
@@ -95,6 +110,60 @@ class App extends Component {
 }
 
 export default App
+```
+
+## Styling
+```javascript
+// import other files with its file path on the App.js file
+import './App.css'
+
+// Styling with the App.css
+  
+  // Option 1: Add id attribute to the open tag of the element you want to change. Suggest using a div tag because it makes styling easier.
+  <div id="square">
+    <p>Resources: {this.state.resources}</p>
+    <button onClick={this.addResource}>
+      Add a resource
+    </button>
+  </div>
+  // then make changes to the id attribute in App.css
+  #square {
+    border: 2px solid blue;
+    width: 150px;
+    height: 100px;
+  }  
+
+  // Option 2: Add class attribute to the open tag of the element you want to change. Suggest using a div tag because it makes styling easier. Note: Since you are in a class component, you will have to use className for this attribute
+  <div className="square">
+    <p>Resources: {this.state.resources}</p>
+    <button onClick={this.addResource}>
+      Add a resource
+    </button>
+  </div>
+  // then make changes to the class attribute in App.css
+    .square {
+    border: 2px solid blue;
+    width: 150px;
+    height: 100px;
+  }  
+
+// Inline styling
+  
+  // Option 3: Go to the opening tag of the element you want to change
+    <button onClick={this.addResource} style={ {color: "green"} }>
+      Add a resource
+    </button>
+
+  // Option 4: Update the state object
+    // constructor section
+      this.state = {
+        resources: 0,
+        color: "green"
+      }
+    // render section
+    <button onClick={this.addResource} style={ {color: this.state.color} }>
+      Add a resource
+    </button>
 ```
 
 ## Merging to Remote Repository
