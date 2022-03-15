@@ -58,9 +58,11 @@ class NetflixShow
     @title = title
     @run_time = run_time
   end
+  
   def get_title
     @title
   end
+  
   def get_run_time
     @run_time
   end
@@ -83,9 +85,11 @@ class NetflixShow
     @title = title
     @run_time = run_time
   end
+  
   def get_title
     @title
   end
+  
   def get_run_time
     @run_time
   end
@@ -107,15 +111,19 @@ class NetflixShow
     @run_time = run_time
     @watched = false
   end
+  
   def get_title
     @title
   end
+  
   def get_run_time
     @run_time
   end
+  
   def been_watched
     @watched = true
   end
+  
   def show_data
     if @watched
       "You have watched the show called #{@title} which is #{@run_time}."
@@ -143,9 +151,11 @@ class NetflixShow
     @title = title
     @run_time = run_time
   end
+  
   def get_title
     @title
   end
+  
   def get_run_time
     @run_time
   end
@@ -169,6 +179,7 @@ class NetflixShow
     @run_time = run_time
     @watched = false
   end
+  
   def show_data
     if @watched
       "You have watched the show called #{@title} which is #{@run_time}."
