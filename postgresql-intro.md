@@ -49,3 +49,37 @@ SELECT name, continent, population
 FROM country
 WHERE population < 1e6
 AND continent = 'North America';
+
+LIKE:
+SELECT name, continent, population
+FROM country
+WHERE continent LIKE '%America%';
+
+
+ORDER BY
+SELECT name, region, indepyear
+FROM country
+ORDER BY indepyear
+LIMIT 5;
+
+Dealing with Null
+SELECT name, region, indepyear
+FROM country
+WHERE indepyear IS NOT null
+ORDER BY indepyear DESC
+LIMIT 5;
+
+10 most recently indep countries where Elisabeth is head of state
+SELECT name, headofstate, indepyear
+FROM country
+WHERE headofstate LIKE '%Elisabeth%'
+AND indepyear IS NOT null
+ORDER BY indepyear DESC
+LIMIT 10;
+
+10 most densely populated countries with AS
+SELECT name, population, surfacearea,
+population / surfacearea AS density
+FROM country
+ORDER BY density DESC
+LIMIT 10;
