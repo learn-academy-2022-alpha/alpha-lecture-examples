@@ -15,7 +15,7 @@ $ rails new
 -> what database we want to use
 -> what to do with our testing enviroment
 
-$ rails new rails_intro -d postgresql -T
+ $ rails new rails_intro -d postgresql -T
 
 - rails project names need to be lowercase and ideally snake_case
 - rails projects should be singular
@@ -23,17 +23,13 @@ $ rails new rails_intro -d postgresql -T
 - Rails is opinionated - that is to say it's super picky about names, syntax and conventions
   - "convention over configuration"
 
-$ rails db:create
+ $ rails db:create
 
 Running via Spring preloader in process 99135
 Created database 'rails_intro_development'
 Created database 'rails_intro_test'
-$ 
-
-
 
 # Run Rails 
 $ rails server 
 OR
 $ rails s
-
