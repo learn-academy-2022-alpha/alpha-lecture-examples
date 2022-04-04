@@ -26,4 +26,6 @@ rails g controller Herb
 Index - controller method, route, view
 Show - controller method, route, view, navigation
 New - controller method, route, view with form_with helper, navigation to the form page
-Create
+Create - controller method with strong params, route
+Edit - controller method, route, view with form_with helper, navigation to the form page
+Update - controller method with strong params, route
